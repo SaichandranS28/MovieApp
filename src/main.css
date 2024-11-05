@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(26, 26, 26);
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#search{
+    border-radius: 0 10px 10px 0;
+}
+#search:hover{
+    cursor: pointer;
+    background-color: red;
+    transition: .3s;
+}
+
+input{
+    border-radius: 10px 0 0 10px;
+}
+input:focus{
+    outline: none;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Intro contents -->
+    <div class="flex gap-10 justify-center mt-10 mx-auto w-[700px] h-16" >
+        <img src="netflix_icon.png" alt="" class="h-14 hover:h-16 hover:cursor-pointer duration-200">
+        <!-- <img src="prime_icon.png" alt="" class="h-14 hover:h-16 hover:cursor-pointer duration-200">
+        <img src="youtube_icon.png" alt="" class="h-14 hover:h-16 hover:cursor-pointer duration-200">
+        <img src="imdb_icon.png" alt="" class="h-14 hover:h-16 hover:cursor-pointer duration-200"> -->
+    </div>
+
+    <!-- Movie search content -->
+    <div class="flex w-[700px] mx-auto mt-10">
+        <input id="movieName" type="text" class="w-[560px] p-3 bg-gray-300" placeholder="Enter a movie name">
+        <button id="search" class="w-[140px] bg-red-600 p-3">Search Movie</button>
+    </div>
+
+    <!-- Movie display content -->
+    <div id="content" class="hidden w-[700px] mx-auto mt-10 text-gray-200">
+        <div class="flex gap-6">
+            <div class="w-[380px]">
+                <h1 class="text-4xl text-white font-mono" id="title"></h1>
+                <p class="mt-3" id="plot"></p>
+                <p class="mt-3 text-gray-50">Actors: <span id="actors" ></span></p>
+                <p class="text-gray-50">Directors: <span id="directors"></span></p>
+                <p class="text-gray-50">Language: <span id="language"></span></p>
+                <p class="text-gray-50">Genre: <span id="genre"></span></p>
+                <p class="text-gray-50">Box office collection: <span id="collection"></span></p>
+                <p class="text-gray-50">Awards: <span id="awards"></span></p>
+                <p class="text-gray-50">Ratings: <span id="ratings"></span></p>
+            </div>
+            <div class="relative w-[320px] h-[400px]">
+                <img class="rounded-2xl h-[100%] w-[100%] shadow-2xl object-cover" id="poster" src="" alt="">
+                <p id="must-watch" class="absolute top-3 left-3 bg-blue-700 text-black px-3 rounded-3xl">Must Watch</p>
+                <p id="recommended" class="absolute top-3 left-3 bg-green-500 text-green-950 px-3 rounded-3xl">Highly Recommended</p>
+                <p id="worth" class="absolute top-3 left-3 bg-teal-200 text-teal-900 px-3 rounded-3xl">Worth Watching</p>
+                <p id="average" class="absolute top-3 left-3 bg-orange-300 text-orange-800 px-3 rounded-3xl">Average</p>
+                <p id="bad" class="absolute top-3 left-3 bg-red-400 text-red-800 px-3 rounded-3xl">Badly Rated</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <h1 id="error" class="text-center text-3xl w-[700px] mx-auto mt-36 text-gray-100"></h1>
+
+    <script src="script.js"></script>
+</body>
+</html>
